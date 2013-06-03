@@ -38,7 +38,7 @@
     
     // Set Object/ Value to persist
     [userDefaults setObject:self.firstNameTextField.text forKey:@"firstName"];
-    [userDefaults setObject:self.lastNameTextField forKey:@"lastName"];
+    [userDefaults setObject:self.lastNameTextField.text forKey:@"lastName"];
     [userDefaults setBool:self.activitySwitch.on forKey:@"activityOn"];
     
     // Save changes
@@ -57,7 +57,6 @@
     {
         [self.activityIndicator startAnimating];
     }
-    
 }
 
 -(void) toggleActivity:(id)sender
@@ -75,7 +74,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
